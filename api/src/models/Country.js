@@ -12,25 +12,27 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    Image: {
+    image:{
       type: DataTypes.STRING,
       allowNull: false
     },
-    contintent:{
+    continent:{
       type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false
     },
-    capital: {
-      type: DataTypes.ARRAY(DataTypes.STRING)
+    capital:{
+      type: DataTypes.ARRAY(DataTypes.STRING),
+  
     },
     subregion:{
-     type: DataTypes.STRING,
+      type: DataTypes.STRING,
     },
-    area: {
+    area:{
       type: DataTypes.FLOAT,
     },
-    population: {
-      type:DataTypes.INTEGER
+    population:{
+      type: DataTypes.INTEGER,
     }
+
   });
 };
