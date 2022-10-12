@@ -10,5 +10,8 @@ const router = Router();
 // Ejemplo: router.use('/auth', authRouter);
 router.get('/countries', controllers.getAll)
 router.get('/countries/:id', controllers.getByID)
+router.get('/activities', controllers.getAcitivities )
+router.post('/activities', controllers.createActivities)
+
 
 module.exports = router;
