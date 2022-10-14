@@ -1,0 +1,179 @@
+
+
+  .back1 {
+    background-image: url("https://i.pinimg.com/474x/eb/45/65/eb45653ee411de126ad9ff12e67c997b.jpg");
+    background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     width: 100%;    
+     height: 400vh;
+     
+   }
+   
+  
+   .title {  
+   text-decoration: solid;
+   text-decoration-color: #f8f8f8;
+   text-transform: capitalize;
+   text-rendering: geometricPrecision;
+   justify-content: center;     
+   align-items: center;  
+   }
+   
+
+  
+   select {
+    font-family: 'Roboto', sans-serif;
+    color: #e67512;
+     background-color: #2e23cc9d;
+     border-radius: 10px;
+     border: 10px;
+     padding: 1rem 1.3rem;
+     border-radius: 1rem;
+     cursor: pointer;
+     padding: 4px;
+     transition: all 0.3s ease 0s;
+     font-size: 30px;
+     border-color: #f8f8f8;
+   }
+   select:hover {
+     background-color: #2e23cce1;
+   }
+   
+   .filterContainer{
+     display: flex;
+     justify-content: space-around;
+   }
+   
+   .pagandsearchContainer{
+     margin-top: 30px;
+     display: grid;
+     grid-template-columns: repeat(3 1fr);
+     
+   }
+   
+   .recipeContainer {
+     max-width: 100vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     align-content: space-around;
+     flex-wrap: wrap;
+     padding: 10px;
+     margin: 10px;
+   }
+   .recipeContainer div {
+     text-align: center;
+   }
+   .subrayado {
+    text-decoration: none;
+
+   }
+
+  
+    .cards{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     margin-left: 30px;
+     gap: 20px;
+    }   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   body {
+    /*  background-image: url("https://img.freepik.com/foto-gratis/interior-cocina-moderna-mesa-madera_23-2148152868.jpg?size=626&ext=jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .title {
+    background-color: #e5890a;
+    opacity: 0.85;
+  }
+  
+  .homeButton {
+    background-color: #f9ffea;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: all 0.3s ease 0s;
+    color: black;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    margin-bottom: 20px;
+  }
+  .homeButton:hover {
+    background-color: #e5890a;
+  }
+
+  
+  .filterContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* @media screen and (max-width: 400px) {
+    .title {
+      margin: 5%;
+      margin-right: 150px;
+      width: 100%;
+      height: 100px;
+      padding-top: 25px;
+      font-size: 50px;
+    }
+    .filterContainer {
+      flex-direction: column;
+      height: 20px;
+    }
+    .inputs {
+      text-align: center;
+      overflow: hidden;
+    }
+    .searchYPag {
+      margin-top: 180px;
+    }
+    #reloadBtn {
+      margin-top: 160px;
+      text-align: center;
+      font-size: 26px;
+    }
+  
+    #homeCreate {
+      margin-top: 20px;
+      font-size: 26px;
+      margin-bottom: 60px;
+      text-align: left;
+    }
+    .homeButton {
+      text-align: center;
+      font-size: 26px;
+    }
+    body{
+      width: 280px;
+      margin-right: 0px;
+      padding: 0%;
+    }
+    .pagination{
+      display: none;
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      padding: 0%;
+      margin: 0%;
+      width: 150px
+    }
+  }
+  
+   */

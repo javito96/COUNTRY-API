@@ -1,30 +1,17 @@
 import { React } from "react";
 
-export default function Card({
-  id,
-  name,
-  image,
-  continent,
-  capital,
-  subregion,
-  area,
-  population,
-  activity,
-}) {
+export default function Card({ name, image, continent }) {
   return (
     <div>
       <img src={image} />
       <h4>{name}</h4>
       <div>
         <p>
+          Continent:{"   "}
           {continent?.map((p) => {
             return <span key={p}>{p}</span>;
           })}
         </p>
-        {/* <p className='p-info'>Activity: {activity?.map(p=>{ */}
-        {/* return <span key={p}> {p.name} -</span>
-              })}</p> */}
-        <p>{id}</p>
       </div>
     </div>
   );
