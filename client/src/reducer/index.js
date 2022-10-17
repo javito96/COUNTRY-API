@@ -2,7 +2,7 @@ const initialState={
     countries: [],
     allCountries: [],
     activities:[],
-    detail:{},
+    detail:[],
     
 }
 

@@ -24,7 +24,7 @@ const getDBInfo = async ()=>{
     return await Country.findAll ({
         include:{
             model: Activity,
-            attributes: ['name'],
+            attributes: ['name', 'hardness', 'duration', 'season'],
             through:{
                 attributes: [],
             },

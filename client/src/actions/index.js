@@ -48,6 +48,14 @@ export function getActivities(){
  }
 }
 
+export function postAcivities(payload){
+    return async function () {
+        const response = await axios.post('/actvities', payload)
+        console.log(response)
+        return response;
+    }
+}
+
 
 export function orderByAlphabetical(payload){
     return {

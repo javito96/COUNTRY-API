@@ -9,7 +9,7 @@ export default function Detail() {
   const dispatch = useDispatch();
   const { id } = useParams();
   const myCountry = useSelector((state) => state.detail);
-  console.log(myCountry[0]);
+  console.log(myCountry);
 
   useEffect(() => {
     dispatch(getDetail(id));
@@ -21,47 +21,50 @@ export default function Detail() {
   return (
     <div>
       <Link to="/home">Return home</Link>
-
-      <div>
+      {myCountry.length > 0 ? (
         <div>
-          <h1>{myCountry.name}</h1>
+          <h1>
+            {myCountry[0].name}({myCountry[0].id})
+          </h1>
 
-          {/* <img
-            src={myCountry.map((e) => e.image)}
+          <img
+            src={myCountry[0].image}
             alt="image not found"
-            width="400px"
-            height="400px"
+            // width="400px"
+            // height="400px"
           />
-        </div> */}
 
-          {/* <p>Pupulation: {myCountry.map((e) => e.population)}</p> */}
-          {/* <p>
-            Subregion:
-            {myCountry.map((e) => "   " + e.subregion)}
-          </p> */}
-          {/* <p>
-            Capital:
-            {myCountry.map((e) => "   " + e.capital)}
-          </p> */}
-
-          {/* {myGame?.genres && (
-            <h4>
-              genres:{" "}
-              {myGame?.genres?.map((g, i) => {
-                return <span key={i}> {g.name} </span>;
-              })}
-            </h4>
-          )} */}
-          {/* {myGame?.genders && (
-            <h4>
-              genres:{" "}
-              {myGame?.genders?.map((g, i) => {
-                return <span key={i}> {g.name} </span>;
-              })}
-            </h4>
-          )} */}
+          <h5>Area: {myCountry[0].area}</h5>
+          <h5>Capital: {myCountry[0].capital}</h5>
+          <h5>Continent: {myCountry[0].continent}</h5>
+          <h5>population: {myCountry[0].population}</h5>
+          <h5>Subregion: {myCountry[0].subregion}</h5>
+          {myCountry[0].activities.map((e, g) => {
+            return (
+              <div key={g}>
+                <p>
+                  Activitie:{"   "}
+                  {e.name}
+                </p>
+                <p>
+                  hardness:{"   "}
+                  {e.hardness}
+                </p>
+                <p>
+                  duration:{"   "}
+                  {e.duration}
+                </p>
+                <p>
+                  season:{"   "}
+                  {e.season?.join(",  ")}
+                </p>
+              </div>
+            );
+          })}
         </div>
-      </div>
+      ) : (
+        <Loading />
+      )}
     </div>
   );
 }
