@@ -3,8 +3,6 @@ import {
   filterByContinent,
   filterByActivities,
   getActivities,
-  ordenByPopulation,
-  orderByAlphabetical,
 } from "../actions";
 import { useDispatch, useSelector } from "react-redux";
 

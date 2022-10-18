@@ -53,6 +53,7 @@ export default function Home() {
   return (
     <div className="back1">
       <h1>The word countries</h1>
+      <Link to="/createActivitie">Create new activitie</Link>
       <Search />
       <select onChange={(e) => handleByName(e)}>
         <option defaultValue>Alphabetical order</option>

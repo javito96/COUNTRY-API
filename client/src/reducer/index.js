@@ -45,6 +45,10 @@ function rootReducer(state= initialState, action){
                 ...state,
                 activities: action.payload
             }
+            case 'POST_ACTIVITIES':
+                return {
+            ...state,
+        }
 
             case 'ORDER_ALPHABETICAL':
                 const sortArr = action.payload === "asc" ?
