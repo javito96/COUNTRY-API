@@ -53,8 +53,12 @@ export default function Home() {
   return (
     <div className="back1">
       <h1>The word countries</h1>
-      <Link to="/createActivitie">Create new activitie</Link>
-      <Search />
+      <div>
+        <Search />
+        <button className="button" id="button">
+          <Link to="/createActivitie">Create new activitie</Link>
+        </button>
+      </div>
       <select onChange={(e) => handleByName(e)}>
         <option defaultValue>Alphabetical order</option>
         <option value="asc">A-Z</option>
@@ -67,8 +71,6 @@ export default function Home() {
         <option value="min">max</option>
       </select>
       <FilteroOrder />
-
-      {/* <link to="/create">created activities</link> */}
 
       <button
         onClick={(e) => {

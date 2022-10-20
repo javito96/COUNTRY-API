@@ -50,8 +50,8 @@ export function getActivities(){
 
 export function postAcivities(payload){
     return async function () {
-        const response = await axios.post('/actvities', payload)
-        console.log(response)
+        const response = await axios.post('http://localhost:3001/activities', payload)    
+        console.log(response)  
         return response;
     }
 }

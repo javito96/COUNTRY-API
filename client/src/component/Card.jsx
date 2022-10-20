@@ -6,12 +6,12 @@ export default function Card({ name, image, continent }) {
       <img src={image} />
       <h4>{name}</h4>
       <div>
-        <p>
+        <h6>
           Continent:{"   "}
           {continent?.map((p) => {
             return <span key={p}>{p}</span>;
           })}
-        </p>
+        </h6>
       </div>
     </div>
   );

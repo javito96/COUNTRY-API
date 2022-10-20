@@ -1,13 +1,12 @@
 
 
   .back1 {
-    background-image: url("https://i.pinimg.com/474x/eb/45/65/eb45653ee411de126ad9ff12e67c997b.jpg");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/056/689/non_2x/world-map-with-countries-borders-with-dots-and-lines-plexus-world-map-isolated-on-white-background-vector.jpg");
     background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed;
      width: 100%;    
-     height: 400vh;
-     
+     height: 400vh;     
    }
    
   
@@ -19,6 +18,7 @@
    justify-content: center;     
    align-items: center;  
    }
+   
    
 
   

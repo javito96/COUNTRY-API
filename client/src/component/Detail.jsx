@@ -42,22 +42,22 @@ export default function Detail() {
           {myCountry[0].activities.map((e, g) => {
             return (
               <div key={g}>
-                <p>
+                <h6>
                   Activitie:{"   "}
                   {e.name}
-                </p>
-                <p>
+                </h6>
+                <h6>
                   hardness:{"   "}
                   {e.hardness}
-                </p>
-                <p>
+                </h6>
+                <h6>
                   duration:{"   "}
                   {e.duration}
-                </p>
-                <p>
+                </h6>
+                <h6>
                   season:{"   "}
                   {e.season?.join(",  ")}
-                </p>
+                </h6>
               </div>
             );
           })}
