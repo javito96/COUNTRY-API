@@ -52,48 +52,53 @@ export default function Home() {
 
   return (
     <div className="back1">
-      <h1>The word countries</h1>
+      <h1 className="title">The word countries</h1>
       <div>
-        <Search />
-        <button className="button" id="button">
-          <Link to="/createActivitie">Create new activitie</Link>
+        <button
+          className="homeButton"
+          onClick={(e) => {
+            handleClick(e);
+          }}
+        >
+          Load all countries again
         </button>
+
+        <Link className="subrayado" to="/createActivitie">
+          <button className="homeButton">Create new activitie</button>
+        </Link>
       </div>
-      <select onChange={(e) => handleByName(e)}>
-        <option defaultValue>Alphabetical order</option>
-        <option value="asc">A-Z</option>
-        <option value="desc">Z-A</option>
-      </select>
+      <div className="filterContainer">
+        <select onChange={(e) => handleByName(e)}>
+          <option defaultValue>Alphabetical order</option>
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
 
-      <select onChange={(e) => handleByPopulation(e)}>
-        <option defaultValue>Population order</option>
-        <option value="max">min</option>
-        <option value="min">max</option>
-      </select>
-      <FilteroOrder />
-
-      <button
-        onClick={(e) => {
-          handleClick(e);
-        }}
-      >
-        Load all countries again
-      </button>
-      {currentCountries &&
-        currentCountries.map((p) => {
-          return (
-            <div key={p.id}>
-              <Link to={"/detail/" + p.id}>
-                <Card
-                  name={p.name}
-                  image={p.image}
-                  continent={p.continent}
-                  // activity={p.activities}
-                />
-              </Link>
-            </div>
-          );
-        })}
+        <select onChange={(e) => handleByPopulation(e)}>
+          <option defaultValue>Population order</option>
+          <option value="max">min</option>
+          <option value="min">max</option>
+        </select>
+        <FilteroOrder />
+      </div>
+      <Search />
+      <div className="countryContainer">
+        {currentCountries &&
+          currentCountries.map((p) => {
+            return (
+              <div className="subrayado" key={p.id}>
+                <Link className="subrayado" to={"/detail/" + p.id}>
+                  <Card
+                    name={p.name}
+                    image={p.image}
+                    continent={p.continent}
+                    id={p.id}
+                  />
+                </Link>
+              </div>
+            );
+          })}
+      </div>
       <Paginado
         countriesPerPage={countriesPerPage}
         allCountries={allCountries.length}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/LandingPage.css";
+import "../CSS/Loading.css";
 
 export default function Loading() {
   return (

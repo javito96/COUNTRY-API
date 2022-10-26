@@ -26,8 +26,7 @@ export default function Search() {
         placeholder="Search..."
         onChange={(e) => handleCountries(e)}
       />
-
-      <button type="submit" onClick={(e) => handleSubmit(e)}>
+      <button className="button" type="submit" onClick={(e) => handleSubmit(e)}>
         Search🔎
       </button>
     </div>

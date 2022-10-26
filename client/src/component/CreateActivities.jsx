@@ -14,6 +14,8 @@ function validate(input) {
       'start the name with capital letter. Only characters "":.,_-are accepted';
   } else if (!input.hardness) {
     errors.hardness = "Place number from 1 to 100";
+  } else if (input.hardness > 100 || input.hardness < 1) {
+    errors.hardness = "The number exceeds limits 1 to 100";
   } else if (!input.duration) {
     errors.duration = "Place hs from 1 to 10";
   } else if (!input.season.length) {
@@ -105,10 +107,12 @@ export default function ActivitiesCreate() {
     <div className="fondo">
       <div>
         <button id="button">
-          <Link to="/home">Back home</Link>
+          <Link className="link" to="/home">
+            Back home
+          </Link>
         </button>
       </div>
-      <form onSubmit={(e) => handleSubmit(e)}>
+      <form className="contaitner" onSubmit={(e) => handleSubmit(e)}>
         <div>
           <label>Name:</label>
           <input
@@ -122,7 +126,7 @@ export default function ActivitiesCreate() {
         <div>
           <label>Hardness: {input.hardness}</label>
           <input
-            type="range"
+            type="number"
             value={input.hardness}
             name="hardness"
             min="0"
@@ -160,12 +164,12 @@ export default function ActivitiesCreate() {
         </select>
         {input.season.map((el) => (
           <div key={el}>
-            <p>{el}</p>
-            <button onClick={() => handleDeleteSeason(el)}> 🗷 </button>
+            <h5>{el}</h5>
+            <button onClick={() => handleDeleteSeason(el)}> x </button>
           </div>
         ))}
 
-        <ul>
+        <ul className="li">
           <li>{input.season.map((el) => el + ", ")} </li>
         </ul>
         {errors.season && <p>{errors.season}</p>}
@@ -179,11 +183,11 @@ export default function ActivitiesCreate() {
         </select>
         {input.country.map((el) => (
           <div key={el}>
-            <p>{el}</p>
-            <button onClick={() => handleDelete(el)}> 🗷 </button>
+            <h5>{el}</h5>
+            <button onClick={() => handleDelete(el)}>x</button>
           </div>
         ))}
-        <ul>
+        <ul className="li">
           <li>{input.country.map((el) => el + ", ")} </li>
         </ul>
         {errors.country && <p>{errors.country}</p>}

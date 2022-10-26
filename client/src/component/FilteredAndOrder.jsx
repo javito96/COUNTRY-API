@@ -5,7 +5,7 @@ import {
   getActivities,
 } from "../actions";
 import { useDispatch, useSelector } from "react-redux";
-
+import "../CSS/Filter.css";
 export default function FilteroOrder() {
   const dispatch = useDispatch();
   const activities = useSelector((state) => state.activities);
@@ -23,7 +23,7 @@ export default function FilteroOrder() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="filter">
       <select onChange={(e) => handleContinent(e)}>
         <option defaultValue value="all">
           Filter continent

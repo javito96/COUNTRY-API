@@ -1,18 +1,29 @@
 
 .div{
-    display: flex;    
+    display: center; 
+    align-content: center;   
     align-items: center;
     left: center;
     right: center;
 }
+.button{
+  background-color: #080962eb;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 4px;      
+  font-size: 20px;   
+  color: blanchedalmond;
+  margin-bottom: 20px;
+}
 input{
-    background: rgba(255, 255, 255, 0.61);
+    background: rgb(209, 203, 234);
     border-radius: 15px;
   border: 0;
   outline: 0;
-  border-bottom: 5px solid  #faa200f1;
+  border-bottom: 5px solid  #1900faf1;
   font-size: 14px;
-  color: #271c08f1;
+  color: #08014b;
   padding: 8px 0;
   margin-top: 20px;
 }
