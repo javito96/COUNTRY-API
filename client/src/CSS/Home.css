@@ -1,126 +1,129 @@
+.back1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.6839110644257703) 0%, rgba(121, 9, 9, 0.22452731092436973) 53%, rgba(0, 212, 255, 0.5074404761904762) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400vh;
+}
 
 
-  .back1 {  
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/056/689/non_2x/world-map-with-countries-borders-with-dots-and-lines-plexus-world-map-isolated-on-white-background-vector.jpg");
-    background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
-     width: 100%;    
-     height: 400vh;     
-   }
-   
-  
-   .title {  
-   text-decoration: solid;
-   text-decoration-color: #f8f8f8;
-   text-transform: capitalize;
-   text-rendering: geometricPrecision;
-   justify-content: center;     
-   align-items: center;  
-   }
-   
-   
+.title {
+  text-decoration: solid;
+  text-decoration-color: #f8f8f8;
+  text-transform: capitalize;
+  text-rendering: geometricPrecision;
+  justify-content: center;
+  align-items: center;
+}
 
-  
-   select {
-    font-family: 'Roboto', sans-serif;
-    color: #140135;
-     background-color: #3c30dedb;
-     border-radius: 10px;
-     border: 10px;
-     padding: 1rem 1.3rem;
-     border-radius: 1rem;
-     cursor: pointer;
-     padding: 4px;
-     transition: all 0.3s ease 0s;
-     font-size: 30px;
-     border-color: #f8f8f8;
-   }
-   select:hover {
-     background-color: #7870f2e1;
-   }
-   
-   .filterContainer{
-     display: flex;
-     justify-content: space-around;
-   }
-   
-   .pagandsearchContainer{
-     margin-top: 30px;
-     display: grid;
-     grid-template-columns: repeat(3 1fr);
-     
-   }
-   
-   .countryContainer {
-     max-width: 100vw;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
-     align-content: space-around;
-     flex-wrap: wrap;
-     padding: 10px;
-     margin: 10px;
-   }
-   .countryContainer div {
-     text-align: center;
-   }
-   .subrayado {
-    text-decoration: none;
 
-   }
 
-  
-    .cards{
-      text-decoration: none;
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     margin-left: 30px;
-     gap: 20px;
-    }   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   body {
-    /*  background-image: url("https://img.freepik.com/foto-gratis/interior-cocina-moderna-mesa-madera_23-2148152868.jpg?size=626&ext=jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .title {
-    background-color: #0a15e54f;
-    opacity: 0.85;
-  }
-  
-  
-  .homeButton {
-    background-color: #080962eb;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    padding: 4px;      
-    font-size: 20px;   
-    color: blanchedalmond;
-    margin-bottom: 20px;
-  }
-  .homeButton:hover {
-    background-color: #1e71ad;
-    transform: scale(1.1);
-    transition: 0.7s;}
 
-  
-  .filterContainer {
-    display: flex;
-    justify-content: space-around;
-  }
-  
+select {
+  font-family: 'Roboto', sans-serif;
+  color: #140135;
+  background-color: #c9c5ffdb;
+  border-radius: 10px;
+  border: 10px;
+  padding: 1rem 1.3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 4px;
+  transition: all 0.3s ease 0s;
+  font-size: 30px;
+  border-color: #f8f8f8;
+}
+
+select:hover {
+  background-color: #7870f2e1;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagandsearchContainer {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+
+}
+
+.countryContainer {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
+
+.countryContainer div {
+  text-align: center;
+}
+
+.subrayado {
+  text-decoration: none;
+
+}
+
+
+.cards {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 30px;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+body {
+  /*  background-image: url("https://img.freepik.com/foto-gratis/interior-cocina-moderna-mesa-madera_23-2148152868.jpg?size=626&ext=jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  background-color: #0a15e54f;
+  opacity: 0.85;
+}
+
+
+.homeButton {
+  background-color: #7a7bd1eb;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 20px;
+  color: rgb(255, 248, 235);
+  margin-bottom: 20px;
+}
+
+.homeButton:hover {
+  background-color: #1e71ad;
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+
+.filterContainer {
+  display: flex;
+  justify-content: space-around;
+}

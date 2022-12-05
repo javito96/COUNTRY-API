@@ -4,18 +4,13 @@ import "../CSS/LandingPage.css";
 
 export default function LandingPage() {
   return (
-    <div className="LandingPage">
-      <div>
+    <div className="LandingPage">      
         <Link to="/home">
           <button className="button" id="button">
             GET INTO
           </button>
         </Link>
-      </div>
-
-      <div>
-        <h1 className="letras">WELCOME</h1>
-      </div>
+        <h1 className="letras">WELCOME</h1>     
     </div>
   );
 }

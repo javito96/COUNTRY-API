@@ -1,40 +1,42 @@
-.LandingPage {   
-    align-content: flex-end;
+.LandingPage {
+  align-content: flex-end;
   background: url('https://img.freepik.com/vector-premium/papel-mapa-mundial-mapa-politico-mundo-sobre-fondo-gris_594089-71.jpg');
   width: 100vw;
-  height: 50vw; 
-  background-repeat: no-repeat; 
+  height: 50vw;
+  background-repeat: no-repeat;
   background-size: cover;
-  }
-  
 
-  .letras {
-    align-items: center;   
-    display: left;     
-    border-top-left-radius: 30px;       
-    height:10vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 65px;
-    color: #024d64;    
-  }
-  #button {
-    border-radius: 20%;
-    background-color: #062d5ac4;
-    padding: 1.2rem 1.4rem;
-    color: #f8f8f8c0;
-    border-radius: 4.9rem;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    transition: all 0.3s;
-    justify-content: left;   
-    text-decoration: none;
-  }
-  #button:hover {  
-    background-color: #094a80;
-    transition: 0.8s;
-    
-    transform: scale(1.1);
-  }
+  align-content: flex-start;
+}
+
+
+.letras {
+  align-items: center;
+  display: left;
+  border-top-left-radius: 30px;
+  height: 10vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 65px;
+  color: #024d64;
+}
+
+#button {
+  border-radius: 20%;
+  background-color: #062d5ac4;
+  padding: 20px 20px;
+  color: #f8f8f8c0;
+  border-radius: 4.9rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+#button:hover {
+  background-color: #094a80;
+  transition: 0.8s;
+  transform: scale(1.1);
+}
